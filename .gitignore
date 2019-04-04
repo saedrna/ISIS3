@@ -1,0 +1,53 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
+# Unignore Makefiles, and TestPreferences
+!Makefile
+!TestPreferences
+!*/3rdParty/Makefile
+
+*.cub
+*.o
+*.so
+*.so.*
+*.a
+moc_*
+*.pb.*
+*.lbl
+*.img
+*.kate-swp
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+*.moc
+ui_*.h
+*html
+
+# ignore all files created by squish coco
+*csmes
+*csexe
+
+print.prt
+
+*/3rdParty/*
+*/inc/*
+*/bin/*
+*/lib/*
+*/tsts/*/input/*
+*/tsts/*/truth/*
+*/tsts/*/output/*
+*/build/
+*/install/
+
+
+
+
+
+
+
