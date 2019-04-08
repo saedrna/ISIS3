@@ -236,7 +236,6 @@ function(add_library_wrapper name sourceFiles libDependencies)
   set_target_properties(${name} PROPERTIES LINKER_LANGUAGE CXX)
   target_link_libraries(${name} ${libDependencies})
   install(TARGETS ${name} DESTINATION lib)
-  install(FILES ${sourceFiles} DESTINATION include)
   
   # buildStaticCore is a command line option specified in the top CMakeLists.txt file.
   if(alsoStatic AND ${buildStaticCore})
@@ -257,7 +256,8 @@ function(add_library_wrapper name sourceFiles libDependencies)
     install(CODE "EXECUTE_PROCESS(COMMAND cp ${CMAKE_BINARY_DIR}/lib/lib${name}.a
                                              ${CMAKE_INSTALL_PREFIX}/lib/lib${name}.a)")
   endif()
-
+  list(FILTER sourceFiles EXCLUDE REGEX "[.+]cpp")
+  install(FILES ${sourceFiles} DESTINATION include)
 endfunction()
 
 function(get_version libFile returnVar)
