@@ -42,3 +42,5 @@ print.prt
 */build/
 */install/
 build/
+
+\.vscode/

@@ -343,17 +343,17 @@ void IsisMain() {
   ProgramLauncher::RunIsisProgram("cam2cam", parameters);
 
 //  Cleanup by deleting the match files
-  remove("match.History.IsisCube");
-  remove("match.lbl");
-  remove("match.cub");
-  remove("match.OriginalLabel.IsisCube");
-  remove("match.Table.BodyRotation");
-  remove("match.Table.HiRISE Ancillary");
-  remove("match.Table.HiRISE Calibration Ancillary");
-  remove("match.Table.HiRISE Calibration Image");
-  remove("match.Table.InstrumentPointing");
-  remove("match.Table.InstrumentPosition");
-  remove("match.Table.SunPosition");
+  // remove("match.History.IsisCube");
+  // remove("match.lbl");
+  // remove("match.cub");
+  // remove("match.OriginalLabel.IsisCube");
+  // remove("match.Table.BodyRotation");
+  // remove("match.Table.HiRISE Ancillary");
+  // remove("match.Table.HiRISE Calibration Ancillary");
+  // remove("match.Table.HiRISE Calibration Image");
+  // remove("match.Table.InstrumentPointing");
+  // remove("match.Table.InstrumentPosition");
+  // remove("match.Table.SunPosition");
 
 // Finally finish by adding the OriginalInstrument group to the TO cube
   Cube toCube;
