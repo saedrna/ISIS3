@@ -4,7 +4,7 @@
 # Sets the following:
 #   PCL_INCLUDE_DIR
 #   PCL_LIBRARY
-
+set(PCL_FIND_VERSION 1.9)
 find_path(PCL_ROOT_INCLUDE_DIR
   NAME pcl
   PATH_SUFFIXES "pcl-${PCL_FIND_VERSION}"
