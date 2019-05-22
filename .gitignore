@@ -46,3 +46,7 @@ build/
 \.vscode/
 
 \.DS_Store
+
+build_env_setup\.sh
+
+conda_build\.sh
