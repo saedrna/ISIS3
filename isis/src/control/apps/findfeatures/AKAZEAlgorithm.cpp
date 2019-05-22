@@ -194,7 +194,7 @@ namespace Isis {
                       "] is not valid for AKAZE's [DescriptorType] variable";
         throw IException(IException::User, msg, _FILEINFO_);
       }
-      algorithm->setDescriptorType((AKAZE::DescriptorType)intValue);
+      algorithm->setDescriptorType((cv::AKAZE::DescriptorType)intValue);
       numSet++;
     }
 
@@ -243,7 +243,7 @@ namespace Isis {
                       "] is not valid for AKAZE's [Diffusivity] variable";
         throw IException(IException::User, msg, _FILEINFO_);
       }
-      algorithm->setDiffusivity((KAZE::DiffusivityType)intValue);
+      algorithm->setDiffusivity((cv::KAZE::DiffusivityType)intValue);
       numSet++;
     }
 

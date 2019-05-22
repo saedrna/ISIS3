@@ -184,7 +184,7 @@ namespace Isis {
                       "] is not valid for AGAST's [Type] variable";
         throw IException(IException::User, msg, _FILEINFO_);
       }
-      algorithm->setType((AgastFeatureDetector::DetectorType)intValue);
+      algorithm->setType((cv::AgastFeatureDetector::DetectorType)intValue);
       numSet++;
     }
 
