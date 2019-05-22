@@ -44,3 +44,5 @@ print.prt
 build/
 
 \.vscode/
+
+\.DS_Store

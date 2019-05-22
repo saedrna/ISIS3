@@ -39,9 +39,9 @@ find_library(BOOST_MATH_C99_MT_LIBRARY
   NAMES boost_math_c99-mt boost_math_c99
 )
 
-find_library(BOOST_SIGNALS_MT_LIBRARY
-  NAMES boost_signals-mt boost_signals
-)
+# find_library(BOOST_SIGNALS_MT_LIBRARY
+#   NAMES boost_signals-mt boost_signals
+# )
 
 find_library(BOOST_CONTAINER_MT_LIBRARY
   NAMES boost_container-mt boost_container
